@@ -95,3 +95,16 @@ The main difference between the previous Linked List, and the Doubly Linked List
 5. **&#955;** Remove: `remove(item)` - Removes the node with the specified element value from the list.
 6. **&#955;** Find Last: `findLast()` - finds and returns the last node in the list.
 7. **&#955;** Display Reverse: `displayReverse()` - Prints to the console the entire list in reverse order, using each node's `prev` property.
+
+## Dictionary
+A dictionary is very similar to that of the Python Dictionary, and also similar to the standard JavaScript Object. It is a set of key/value pairs. Data is accessed by the keys only, and there is no traversal. Each value is returned when called by the key.
+
+### Dictionary Details
+1. Data Store: `dataStore` - This is the basic underlying data structure of the Dictionary. It is literally a JavaScript Object, and could have been an array. I prefer the Object as we don't have to worry about additional indexes inside the data structure.
+2. **&#955;** Add: `add(key, value)` - Adds the parameter `value` to the dictionary via the `key` parameter.
+3. **&#955;** Find: `find(key)` - Returns the value represented by the `key` parameter.
+4. **&#955;** Remove: `remove(key)` - Removes the value represented by the `key` parameter from the Dictionary.
+5. **&#955;** Show All: `showAll()` - Prints to the console all key/value pairs in the dictionary. This is unsorted.
+6. **&#955;** Show Sorted: `showSorted()` - Prints to the console all key/value pairs in the dictionary and is sorted.
+7. **&#955;** Count: `count()` - Returns the number of key/value pairs in the dictionary.
+8. **&#955;** Clear: `clear()` - Removes all key/value pairs from the Dictionary.
