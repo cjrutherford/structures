@@ -59,7 +59,9 @@ class List{
     this.pos = position;
   }
   getElement = function getElement(){return this.listData[this.pos];}
-  length = function length(){}
+  length = function length(){
+    return this.listData.length;
+  }
   contains = function contains(element){
     this.listData.forEach(e => {
       if(e === element){
