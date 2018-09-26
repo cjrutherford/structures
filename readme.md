@@ -37,4 +37,23 @@ The Stack is a Last In First Out (*LIFO*) data structure. To get an idea of an a
 2. Top: `top` - Represents the index of the underlying array, and the only point of entry into the stack. The top is the boundary that we access the stack.
 3. **&#955;** Push: `push(element)` - Adds an element to the stack. Since we can only modify from the "top" of the stack, this new element becomes the top of the stack and will be the first returned by `pop()`.
 4. **&#955;** Pop: `pop()` - returns the element at the "top" of the stack. This also "removes" the item from the stack. (**this item is not actually removed from the underlying array, it is simply "no longer the top", when a new element is added by `push()` it will be overwritten.**)
-5. **&#955;**
+5. **&#955;** Peek: `peek()` - Returns the element immediately below `top`. (_`top - 1`_)
+6. **&#955;** Length: `length()` - returns the value of `Top`, which is essentially the number of elements remaining in the stack.
+7. **&#955;** Clear: `clear()` - Sets top to 0. This essentially clears the entire stack of items. (Mainly because `push()` will overwrite any existing element that is above `top`)
+
+
+## Queue
+
+The Queue data structure is similar to the Stack, because we can only access the data from one "end" of the structure, but instead of adding and removing from the same end, as in LIFO, we add and remove from opposite "ends" to create a First In First Out (FIFO) flow for this data structure.
+
+### Queue Key Terms
+1. **Enqueue** - Means that we are adding to the queue.
+2. **Dequeue** - Means that we are taking away from the queue.
+
+### Queue Details
+1. Data Store: `dataStore` - Implemented as a private array, this serves as the basis of the queue.
+2. **&#955;** Enqueue: `enqueue(element)` - Adds an element to the queue. (on the newest "end" of the queue.)
+3. **&#955;** Dequeue: `dequeue()` - removes an element from the queue. (on the oldest "end" of the queue.)
+4. **&#955;** Front: `front()` - returns the first element of the queue. (True 0 index of the underlying array.)
+5. **&#955;** Back: `back()` - returns the last element of the queue. (True `dataStore.length -1` index of the underlying array.)
+6. **&#955;** To String: `toString()` - provides a string representation of the entire queue as currently instantiated.
