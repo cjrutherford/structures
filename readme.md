@@ -77,3 +77,21 @@ Linked Lists include Nodes and nodes are simply the value of the node, and a lin
 4. **&#955;** Remove: `remove(item)` - Locates the item to be removed, and removes the item from the Linked List.
 5. **&#955;** Display: `display()` - logs to the console each item in the Linked List.
 6. **&#955;** Find Previous: `findPrevious(item)` - determines the node prior to the one passed as a parameter.
+
+
+## Doubly Linked Lists
+The main difference between the previous Linked List, and the Doubly Linked List is that instead of each node having only a link to the next Node in the list each node has a `next` and `prev` properties that are links to the next and previous nodes respectively. This allows us to traverse the List in both directions.
+
+### Doubly Linked List Node Details
+1. Element: `element` - Value of the Node
+2. Next: `next` - Link to the next Node.
+3. Prev: `prev` - Link to the previous Node.
+
+### Doubly Linked List Details
+1. Head: `head` - Represents the start of the Doubly Linked List.
+2. **&#955;** Find: `find(element)` - finds the element in the list and returns it.
+3. **&#955;** Insert: `insert(newElement, item)` - inserts the `newElement` parameter as a new node just after the Node `item` in the list.
+4. **&#955;** Display: `display()` - prints to the console the entire list in forward order, via each node's `next` property.
+5. **&#955;** Remove: `remove(item)` - Removes the node with the specified element value from the list.
+6. **&#955;** Find Last: `findLast()` - finds and returns the last node in the list.
+7. **&#955;** Display Reverse: `displayReverse()` - Prints to the console the entire list in reverse order, using each node's `prev` property.
