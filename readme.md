@@ -57,3 +57,23 @@ The Queue data structure is similar to the Stack, because we can only access the
 4. **&#955;** Front: `front()` - returns the first element of the queue. (True 0 index of the underlying array.)
 5. **&#955;** Back: `back()` - returns the last element of the queue. (True `dataStore.length -1` index of the underlying array.)
 6. **&#955;** To String: `toString()` - provides a string representation of the entire queue as currently instantiated.
+
+## Linked List
+
+The Linked List is a data structure similar to the original list, except that instead the list isn't simply an array behind the scenes, and each element of the list is a "Node" object. The node is simply the value, and a pointer to the next node in the list. The pointer is the "Link" part of the linked list. The Linked List described can be called a "Singly Linked List" as each node in the list is linked to the next node in the list only. There are no "back" links to previous nodes.
+
+### Linked List Details
+
+Linked Lists include Nodes and nodes are simply the value of the node, and a link to the next node denoted by the `next` property.
+
+#### Node
+1. Element: `element` - Value of the Node.
+2. Next: `next` - Link to the next Node.
+
+#### Linked List
+1. Head: `head` - Represents the start of the Linked List.
+2. **&#955;** Find: `find(element)` - finds the Node with the value passed to the function.
+3. **&#955;** Insert: `insert(newElement, item)` - Creates a new Node to add to the list based on the `newElement` parameter. Then it finds the location in the list to add the new node, and inserts the new node in the appropriate spot in the Linked List.
+4. **&#955;** Remove: `remove(item)` - Locates the item to be removed, and removes the item from the Linked List.
+5. **&#955;** Display: `display()` - logs to the console each item in the Linked List.
+6. **&#955;** Find Previous: `findPrevious(item)` - determines the node prior to the one passed as a parameter.
